@@ -286,6 +286,7 @@ func (mc *mysqlConn) writeHandshakeResponsePacket(authResp []byte, plugin string
 		clientLocalFiles |
 		clientPluginAuth |
 		clientMultiResults |
+		clientMultiStatements |
 		mc.flags&clientLongFlag
 
 	if mc.cfg.ClientFoundRows {
